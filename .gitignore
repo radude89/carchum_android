@@ -1,15 +1,42 @@
+# Android specific
 *.iml
 .gradle
 /local.properties
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# IntelliJ IDEA / Android Studio
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+
+# Java / Kotlin specific
+*.class
+*.log
+
+# Package Files
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Gradle wrapper jar file is an exception and should be included in VCS
+!gradle/wrapper/gradle-wrapper.jar
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Kotlin Gradle plugin data
+.kotlin/
