@@ -4,7 +4,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DateRange
-import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Place
 import androidx.compose.material3.BottomAppBar
@@ -19,12 +18,18 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.vectorResource
+import com.rdan.carchum.R
 import com.rdan.carchum.ui.NavItem
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
     val navItemList = listOf(
-        NavItem("Vehicles", Icons.Default.Home),
+        NavItem(
+            "Vehicles",
+            ImageVector.vectorResource(R.drawable.directions_car_24px)
+        ),
         NavItem("Events", Icons.Default.DateRange),
         NavItem("Parking", Icons.Default.Place),
         NavItem("More", Icons.Default.Menu),
